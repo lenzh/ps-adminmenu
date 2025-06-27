@@ -8,8 +8,6 @@
 	async function SelectPlayer(player) {
 		SELECTED_PLAYER.set(player)
 		MENU_WIDE.set(true)
-		const vehicles = await SendNUI('getVehicle', { cid: $SELECTED_PLAYER.cid });
-		PLAYER_VEHICLES.set(vehicles);
 	}
 </script>
 
